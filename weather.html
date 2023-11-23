@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre el clima de hoy </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body style="background-color:lightskyblue;">
+    <div class="p-3 mb-2 bg-warning-subtle text-emphasis-warning">
+        <span style="text-align: right;"><i class="bi bi-cloud-sun-fill"></i></span>
+        <h1>
+            <p class="text-center"><strong class="display-4">BIENVENIDOS A CLIMAX.
+        </h1></strong></p>
+    </div>
+    </div>
+    <h2><em>¿De que ciudad deseas ver el clima?</h2></em>
+    </div>
+
+    <br>
+    <form method="POST">
+        <div class="input-group flex-nowrap">
+            <div class="form-floating">
+                <input class="form-control" name="city" type="text" placeholder="Nombre de la Ciudad" required>
+                <label for="floatingInputValue">Ciudad</label>
+                <br>
+                <div class="col-12">
+                    <button class="btn btn-success" type="submit">Agregar Ciudad</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <br>
+    <div class="row">
+        <div class="cold-sm-6 mb-3 mb-sm-0">
+            <div class="card" style="width: 20rem;">
+                <div class="card-body">
+                    <h5 class="card-title">CIUDAD: {{Clima.ciudad}}</h5>
+                    <h6 class="card-text">TEMPERATURA: {{Clima.temperatura}}</h6>
+                    <p class="card-text">DESCRIPCION: {{Clima.descripcion}}</p>
+                    <a href="#" class="btn btn-outline-danger ">ELIMINAR<i class="bi bi-trash"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="cold-sm-6">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">CIUDAD: {{Clima.ciudad}}</h5>
+                <h6 class="card-text">TEMPERATURA:{{Clima.temperatura}}</h6>
+                <p class="card-text">DESCRIPCION: {{Clima.descripcion}}</p>
+                <a href="#" class="btn btn-outline-danger ">ELIMINAR<i class="bi bi-trash"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
